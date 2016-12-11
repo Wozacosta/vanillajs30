@@ -12,9 +12,7 @@ function setDate(){
   secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
   minHand.style.transform = `rotate(${minutesDegrees}deg)`;
   hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
-  console.log(seconds);
-  console.log(minutes);
-  console.log(hours);
 }
 
 setInterval(setDate, 1000);
+setDate(); //launch it before the setInterval kicks in
